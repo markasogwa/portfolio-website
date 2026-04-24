@@ -13,7 +13,7 @@ export default function Hero() {
           className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float"
           style={{ animationDelay: "1s" }}
         />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-blue-600/10 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 pt-20 pb-16">
@@ -27,7 +27,7 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-tight animate-fade-in-up">
-            Hi, I'm <span className="text-gradient glow">Mark Asogwa</span>
+            Hi, I&apos;m <span className="text-gradient glow">Mark Asogwa</span>
           </h1>
 
           {/* Subheading */}
@@ -57,6 +57,12 @@ export default function Hero() {
               Node.js
             </span>
             <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              Express.js
+            </span>
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              JavaScript
+            </span>
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
               TypeScript
             </span>
             <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
@@ -65,28 +71,36 @@ export default function Hero() {
             <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
               PostgreSQL
             </span>
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              WoordPress
+            </span>
+            <span className="px-3 py-1 bg-white/5 rounded-full border border-white/10">
+              Woocommerce
+            </span>
           </div>
 
           {/* CTA Buttons */}
-          <div
-            className="flex flex-wrap justify-center gap-4 pt-4 animate-fade-in-up"
-            style={{ animationDelay: "0.6s" }}
-          >
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/projects"
-              className="group px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105"
+              className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105"
             >
-              View My Work
-              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">
-                →
-              </span>
+              View My Works
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href="mailto:asogwaoke@gmail.com"
               className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/20 hover:border-white/40 rounded-lg font-semibold transition-all"
             >
-              Get In Touch
-            </Link>
+              Send an Email
+            </a>
+
+            <a
+              href="https://wa.me/2348141996503"
+              className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105"
+            >
+              WhatsApp Me
+            </a>
           </div>
 
           {/* Social Links */}
@@ -95,7 +109,7 @@ export default function Hero() {
             style={{ animationDelay: "0.8s" }}
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/markasogwa"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors text-2xl hover:scale-110 transform duration-200"
@@ -104,7 +118,7 @@ export default function Hero() {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/asogwa-mark-okechukwu/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transition-colors text-2xl hover:scale-110 transform duration-200"

@@ -15,16 +15,23 @@ export default function CTA() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/contact"
+              href="https://www.linkedin.com/in/asogwa-mark-okechukwu/"
               className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105"
             >
-              Start a Conversation
+              Connect on LinkedIn
             </Link>
             <a
-              href="mailto:mark.asogwa@gmail.com"
+              href="mailto:asogwaoke@gmail.com"
               className="px-8 py-4 bg-white/5 hover:bg-white/10 border border-white/20 hover:border-white/40 rounded-lg font-semibold transition-all"
             >
               Send an Email
+            </a>
+
+            <a
+              href="https://wa.me/2348141996503"
+              className="px-8 py-4 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:scale-105"
+            >
+              WhatsApp Me
             </a>
           </div>
         </div>

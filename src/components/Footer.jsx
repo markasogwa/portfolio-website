@@ -14,6 +14,7 @@ export default function Footer() {
               <span className="text-gradient">Mark</span>Asogwa
               <span className="text-blue-400">.</span>dev
             </h3>
+
             <p className="text-gray-400 text-sm leading-relaxed">
               Building scalable web applications with modern technologies.
               Available for freelance projects and full-time opportunities.
@@ -42,22 +43,7 @@ export default function Footer() {
                   Projects
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
-              </li>
+              
             </ul>
           </div>
 
@@ -68,14 +54,14 @@ export default function Footer() {
             </h4>
             <div className="flex gap-4">
               <a
-                href="mailto:mark.asogwa@gmail.com"
+                href="mailto:asogwaoke@gmail.com"
                 className="text-gray-400 hover:text-blue-400 transition-colors text-xl"
                 aria-label="Email"
               >
                 <FaEnvelope />
               </a>
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/markasogwa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors text-xl"
@@ -84,7 +70,7 @@ export default function Footer() {
                 <FaGithub />
               </a>
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/asogwa-mark-okechukwu/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors text-xl"
@@ -93,7 +79,7 @@ export default function Footer() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://wa.me/234xxxxxxxxxx"
+                href="https://wa.me/2348141996503"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors text-xl"

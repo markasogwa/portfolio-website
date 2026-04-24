@@ -22,8 +22,13 @@ export const metadata = {
     "Next.js",
     "React",
     "Node.js",
+    "PHP",
+    "TailwindCSS",
     "web developer",
     "Mark Asogwa",
+    "WordPress",
+    "Woocommerce",
+    "Plugins",
   ],
   authors: [{ name: "Mark Asogwa" }],
   openGraph: {

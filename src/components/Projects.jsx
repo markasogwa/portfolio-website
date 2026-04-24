@@ -1,31 +1,13 @@
+import { projectsData } from "@/data/projects";
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
-  // Featured projects for homepage
-  const featuredProjects = [
-    {
-      title: "Mini POS / Airtime Recharge Platform",
-      description:
-        "Wallet-based web app allowing users to fund wallets, recharge airtime, and track transactions in real-time. Secure, reliable, and scalable.",
-      stack:
-        "Next.js, Node.js, MongoDB, Paystack, Monnify, VTPass, Tailwind CSS",
-      live: "#",
-      github: "#",
-      image: "/projects/pos.png",
-      featured: true,
-    },
-    {
-      title: "Authentication & Role-Based Dashboards",
-      description:
-        "Full authentication system with role-based access, secure sessions, and protected dashboards. Includes reusable components and API protection.",
-      stack: "Next.js, Node.js, Express, MongoDB, JWT, Tailwind CSS",
-      live: "#",
-      github: "#",
-      image: "/projects/auth.png",
-      featured: true,
-    },
-  ];
+  // sort and filter Featured projects for homepage
+  const featuredProjects = projectsData
+    .filter((project) => project.featured === true)
+    .sort((a, b) => a.order - b.order)
+    .slice(0, 2);
 
   return (
     <section className="py-24 border-t border-white/10">

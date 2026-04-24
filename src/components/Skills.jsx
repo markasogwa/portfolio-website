@@ -15,24 +15,29 @@ const skillCategories = [
   },
   {
     category: "Backend",
-    skills: ["Node.js", "Express", "REST APIs", "Authentication", "JWT"],
+    skills: ["Node.js", "Next.js", "Express", "REST APIs", "Authentication", "JWT"],
     icon: "⚙️",
   },
   {
+    category: "CMS & E-commerce",
+    skills: ["WordPress", "WooCommerce", "Custom Plugins", "Elementor", "REST API"],
+    icon: "🛒",
+  },
+  {
     category: "Database",
-    skills: ["MongoDB", "PostgreSQL", "Prisma"],
+    skills: ["MongoDB", "PostgreSQL", "Prisma", "MySQL"],
     icon: "🗄️",
   },
   {
     category: "Tools & Others",
-    skills: ["Git & GitHub", "Vercel", "Postman", "VS Code", "Figma"],
+    skills: ["Git & GitHub", "Vercel", "Postman", "VS Code", "CI/CD Pipeline"],
     icon: "🛠️",
   },
 ];
 
 export default function Skills() {
   return (
-    <section className="py-24 border-t border-white/10 bg-gradient-to-b from-transparent to-blue-950/10">
+    <section className="py-24 border-t border-white/10 bg-linear-to-b from-transparent to-blue-950/10">
       <div className="max-w-6xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -45,7 +50,7 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, idx) => (
             <div
               key={category.category}
